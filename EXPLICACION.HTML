@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explicación - Botanica</title>
+    <link rel="stylesheet" href="CSS/PROCTCSS.CSS">
+</head>
+<body>
+    <header> 
+        <nav class="menu" id="menu">
+            <div class="logo">
+                <h1>BOTANICA</h1>
+            </div>
+            <ul>
+                <li><a href="index.html#inicio">Inicio</a></li>
+                <li><a href="index.html#menu">Menú</a></li>
+                <li><a href="index.html#nosotros">Nosotros</a></li>
+                <li><a href="index.html#contactos">Contactos</a></li>
+                <li><a href="MENU.html">Productos</a></li> <!-- Enlace a la página de productos -->
+                <li><a href="explicacion.html">Explicación</a></li> <!-- Enlace a la nueva página de explicación -->
+            </ul>
+        </nav>
+    </header>
+
+    <section id="video-explicacion" class="section">
+        <div class="titulo-contenedor">
+            <h2>Explicación</h2>
+        </div>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/TU_URL_DE_VIDEO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="redes-sociales">
+            <a href="https://facebook.com" target="_blank"><img src="IMAGENES/20.png" alt="Facebook"></a>
+            <a href="https://twitter.com" target="_blank"><img src="IMAGENES/21.png" alt="Twitter"></a>
+            <a href="https://instagram.com" target="_blank"><img src="IMAGENES/22.png" alt="Instagram"></a>
+        </div>
+        <p>&copy; 2024 Botanica. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        // Alternar menú
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.menu ul').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

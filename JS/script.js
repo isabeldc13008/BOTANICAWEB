@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
     prevButton.addEventListener('click', prevSlide);
 
     // Automatic sliding
-    setInterval(nextSlide, 50000);
+    setInterval(nextSlide, 7000);
 });
 
 

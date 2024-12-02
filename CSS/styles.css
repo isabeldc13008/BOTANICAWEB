@@ -474,7 +474,7 @@ button:hover {
     color: #555;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 400px) {
     .tarjetas {
         flex-wrap: nowrap;
         overflow-x: auto;
@@ -497,7 +497,7 @@ button:hover {
     display: none; /* Oculta las flechas por defecto */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 400px) {
     .recomendados .prev, .recomendados .next {
         display: flex; /* Muestra las flechas en móviles si las necesitas */
     }
