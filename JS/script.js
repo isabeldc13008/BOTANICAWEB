@@ -79,3 +79,28 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+// Carrusel de tarjetas en móviles
+let tarjetaIndex = 0;
+
+function showTarjetaSlides(n) {
+    let tarjetas = document.querySelectorAll('.carrusel-tarjetas .tarjeta');
+    if (n >= tarjetas.length) { tarjetaIndex = 0; }
+    if (n < 0) { tarjetaIndex = tarjetas.length - 1; }
+
+    for (let i = 0; i < tarjetas.length; i++) {
+        tarjetas[i].style.display = 'none';
+    }
+    tarjetas[tarjetaIndex].style.display = 'block';
+}
+
+document.querySelector('.recomendados .prev').addEventListener('click', function () {
+    showTarjetaSlides(tarjetaIndex -= 1);
+});
+
+document.querySelector('.recomendados .next').addEventListener('click', function () {
+    showTarjetaSlides(tarjetaIndex += 1);
+});
+
+showTarjetaSlides(tarjetaIndex);
+
+

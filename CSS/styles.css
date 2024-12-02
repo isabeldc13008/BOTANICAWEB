@@ -203,7 +203,7 @@ button:hover {
     gap: 20px;
     background-color: #f8f8f8;
     height: 100vh; /* Ocupa toda la altura de la pantalla */
-    text-align: center; /* Centra el texto */
+    text-align: center;
 }
 
 .columna-imagenes {
@@ -283,7 +283,7 @@ button:hover {
 
 /* Estilos para la sección "Recomendados" */
 .seccion-recomendados {
-    background-color: #f7941d; /* Fondo naranja */
+    background-color: #d5d1b3; /* Fondo naranja */
     padding: 50px 10%; /* Ajuste de padding */
     box-sizing: border-box;
     display: flex;
@@ -337,15 +337,16 @@ button:hover {
 
 /* Estilos para la sección de Contacto */
 .seccion-contacto {
-    background-image: url('IMAGENES/fondo.png'); /* Ruta de la imagen de fondo */
-    background-size: cover; /* La imagen cubre todo el fondo */
-    background-position: center; /* Centra la imagen de fondo */
-    background-repeat: no-repeat; /* No repite la imagen */
+    background-color: #e3c3a4;
     padding: 50px 10%;
     text-align: center;
     height: auto; /* Altura automática */
     box-sizing: border-box;
-    color: #fff; /* Color del texto en blanco para mayor contraste */
+    color: #000000; /* Color del texto en blanco para mayor contraste */
+    display: flex; /* Hace que la sección use flexbox */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .seccion-contacto .titulo-contenedor {
@@ -364,11 +365,35 @@ button:hover {
     margin: 0;
 }
 
+.contacto-info {
+    width: 100%;
+    max-width: 600px; /* Ancho máximo para asegurar legibilidad */
+    margin: 0 auto;
+}
+
 .contacto-info p {
     margin: 10px 0;
     font-size: 18px;
     color: #fff; /* Asegura que el texto sea legible sobre la imagen de fondo */
+    text-align: left; /* Texto alineado a la izquierda */
 }
+
+@media (max-width: 768px) {
+    .seccion-contacto {
+        padding: 20px 5%;
+    }
+
+    .seccion-contacto .titulo-contenedor {
+        padding: 10px 0;
+    }
+
+    .contacto-info p {
+        font-size: 16px;
+        text-align: center; /* Centra el texto en móviles para mejor legibilidad */
+    }
+}
+
+
 
 /* Estilos para el footer con Redes Sociales */
 .footer {
@@ -400,8 +425,82 @@ button:hover {
     color: #aaa;
 }
 
+@media (max-width: 768px) {
+    .footer p {
+        font-size: 12px;
+    }
 
+    .footer .redes-sociales img {
+        width: 25px;
+        height: 25px;
+    }
+}
+/* Tarjetas */
+.tarjetas {
+    display: flex;
+    justify-content: center; /* Centra las tarjetas */
+    gap: 20px; /* Espaciado entre tarjetas */
+    width: 100%;
+    max-width: 1200px; /* Ancho máximo para las tarjetas */
+    overflow: hidden;
+    position: relative;
+}
 
+.tarjeta {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 20px;
+    flex: 0 1 calc(33.333% - 20px); /* Tres tarjetas por fila */
+    box-sizing: border-box;
+}
 
+.tarjeta img {
+    width: 100%;
+    height: 200px; /* Altura fija para todas las imágenes */
+    object-fit: cover;
+    border-bottom: 5px solid #f7941d; /* Línea naranja abajo de la imagen */
+}
 
+.tarjeta h3 {
+    margin: 20px 0;
+    font-size: 24px;
+    color: #333;
+}
 
+.tarjeta p {
+    font-size: 16px;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .tarjetas {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+
+    .tarjeta {
+        flex: 0 0 80%; /* Muestra una tarjeta a la vez en móviles */
+    }
+
+    .prev, .next {
+        display: none; /* Oculta botones en móviles, si no son necesarios */
+    }
+}
+
+.recomendados .prev, .recomendados .next {
+    display: block; /* Asegura que solo las flechas en la sección de "Recomendados" se muestren */
+}
+
+.prev, .next {
+    display: none; /* Oculta las flechas por defecto */
+}
+
+@media (max-width: 768px) {
+    .recomendados .prev, .recomendados .next {
+        display: flex; /* Muestra las flechas en móviles si las necesitas */
+    }
+}
+
+ 
