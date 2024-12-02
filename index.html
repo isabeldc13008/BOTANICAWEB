@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Desplegable con Carrusel</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+    <header> 
+        <nav class="menu" id="menu">
+            <div class="logo">
+                <h1>BOTANICA</h1>
+            </div>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li class="dropdown">
+                    <a href="#menu">Menú</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#desayunos">Desayunos</a></li>
+                        <li><a href="#almuerzos">Almuerzos</a></li>
+                        <li><a href="#bebidas">Bebidas</a></li>
+                    </ul>
+                </li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#contactos">Contactos</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="inicio" class="section carrusel">
+        <div class="slide active">
+            <img src="IMAGENES/INICIO1.png" alt="Imagen 1">
+            <div class="contenido">
+                <h2>Un sabor único</h2>
+                <p>Porque todos merecemos cosas únicas</p>
+                <button>Nosotros</button>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="IMAGENES/INICIO2.png" alt="Imagen 2">
+            <div class="contenido">
+                <h2>Otro mensaje</h2>
+                <p>Descubre lo especial</p>
+                <button>Explorar</button>
+            </div>
+        </div>
+        <button class="prev">❮</button>
+        <button class="next">❯</button>
+    </section>
+
+    <section id="nosotros" class="section seccion-bienvenida">
+        <div class="columna-imagenes">
+            <img src="IMAGENES/INICIO3.png" alt="Imagen de la Empresa">
+        </div>
+        <div class="columna-derecha">
+            <h2>HOLA Y BIENVENIDA</h2>
+            <p>Lorem Ipsum es simplemente el texto de relleno de la industria de la impresión y la composición tipográfica. Lorem Ipsum ha sido el texto estándar de la industria desde el año 1500...</p>
+            <p>Lorem Ipsum ha sido el texto estándar de la industria desde el año 1500 cuando un impresor desconocido tomó una galera de texto y la mezcló para hacer un libro de muestras.</p>
+        </div>
+    </section>
+
+
+    <section id="recomendados" class="section seccion-recomendados">
+        <div class="titulo-contenedor">
+            <h2>RECOMENDADOS</h2>
+        </div>
+        <div class="tarjetas">
+            <div class="tarjeta">
+                <img src="IMAGENES/RECOMENDADO1.png" alt="Recomendado 1">
+                <h3>TOSTADAS CON UNTABLES</h3>
+                <p>Las Tostadas con Untables son una opción simple y deliciosa para desayuno o merienda. Se sirven con una variedad de panes, como masa madre o integral, acompañados de untable a elección: queso crema, mermelada casera o dulce de leche. Es una combinación clásica que se adapta a todos los gustos y es perfecta para disfrutar con un café o té. </p>
+            </div>
+            <div class="tarjeta">
+                <img src="IMAGENES/RECOMENDADO2.png" alt="Recomendado 2">
+                <h3>MINI CAKES</h3>
+                <p>Los Mini Cakes son pequeños pasteles individuales, ideales para acompañar un café o para eventos. Suelen ser esponjosos, decorados con glaseados, frutas o chocolate, y están disponibles en una variedad de sabores como vainilla, chocolate o cítricos. Perfectos para un bocado dulce. </p>
+            </div>
+            <div class="tarjeta">
+                <img src="IMAGENES/RECOMENDADO3.png" alt="Recomendado 3">
+                <h3>CAFÉ IRLANDES</h3>
+                <p>El Café Irlandés es una bebida clásica que combina café caliente, whisky irlandés, azúcar (o almíbar) y crema espesa. Se prepara vertiendo el café y el whisky con azúcar en un vaso resistente al calor, y se corona con una capa de crema ligeramente batida que flota sobre la superficie. Es ideal para quienes disfrutan de un café con un toque fuerte y reconfortante, perfecto para climas fríos o momentos especiales.</p>
+            </div>
+        </div>
+    </section>
+
+<!-- Sección de Contacto -->
+<section id="contactos" class="section seccion-contacto">
+    <div class="titulo-contenedor">
+        <h2>CONTACTENOS</h2>
+    </div>
+    <div class="contacto-info">
+        <p><strong>Dirección:</strong> Calle Cualquiera 123, Cualquier Lugar</p>
+        <p><strong>Teléfono:</strong> 91-1234-567</p>
+        <p><strong>Email:</strong> hola@unsitiogenial.es</p>
+    </div>
+</section>
+
+<!-- Footer con Redes Sociales -->
+<footer class="footer">
+    <div class="redes-sociales">
+        <a href="https://facebook.com" target="_blank"><img src="IMAGENES/facebook.png" alt="Facebook"></a>
+        <a href="https://twitter.com" target="_blank"><img src="IMAGENES/twitter.png" alt="Twitter"></a>
+        <a href="https://instagram.com" target="_blank"><img src="IMAGENES/instagram.png" alt="Instagram"></a>
+    </div>
+    <p>&copy; 2024 Botanica. Todos los derechos reservados.</p>
+</footer>
+
+
+
+    
+    
+    
+    
+
+
+    <script src="JS/script.js"></script>
+</body>
+</html>
